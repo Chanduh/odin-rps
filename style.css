@@ -1,0 +1,43 @@
+* {
+    font-family: monospace;
+ 
+}
+
+button {
+    padding: 15px;
+    margin: 5px;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+
+}
+
+h1 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border: 1px solid red;
+}
+
+#scoreboards{
+    display: flex;
+    border: 1px solid red;
+    justify-content: space-evenly;
+    padding: 10px;
+
+}
+
+#scoreboardHuman, 
+#scoreboardComputer{
+    font-size: 50px;;
+    width: 100px;
+    height: 75px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
