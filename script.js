@@ -6,12 +6,27 @@ function tallyHuman() {
     document.getElementById('scoreboardHuman').innerHTML
         += "|";
         humanScore++;
+        human.style.color = "red";
+        machine.style.color = "rgb(176, 109, 176)";
+
+
 }
 function tallyComputer() {
     document.getElementById('scoreboardComputer').innerHTML
         += "|";
         computerScore++;
+        machine.style.color = "red";
+        human.style.color = "rgb(176, 109, 176)";
 
+
+}
+function showHumanChoice(string) {
+    document.getElementById('human').innerHTML
+        = string;
+}
+function showMachineChoice(string) {
+    document.getElementById('machine').innerHTML
+        = string;
 }
 
 
@@ -69,7 +84,16 @@ function playRound(playerSelection, func){
 
          checkForGameOver();
          computerSelection = getComputerChoice()
-    
+
+        if (playerSelection === "ROCK"){showHumanChoice("ROCK")} 
+        else if (playerSelection === "PAPER"){showHumanChoice("PAPER")} 
+        else if (playerSelection === "SCISSORS"){showHumanChoice("SCISSORS")}
+        
+        if (computerSelection === "ROCK"){showMachineChoice("ROCK")} 
+        else if (computerSelection === "PAPER"){showMachineChoice("PAPER")} 
+        else if (computerSelection === "SCISSORS"){showMachineChoice("SCISSORS")}
+        
+
         if (playerSelection === computerSelection){
             compVoice("Eh, it's a tie!");
         }
