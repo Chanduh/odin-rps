@@ -56,7 +56,7 @@ function checkForWinner(){
         compVoice("That was so easy for me, you know.")
     }
     else if (humanScore >= 5){
-        computerVoice.style.color = "gray";
+        computerVoice.style.color = "red";
         scoreboardComputer.style.color = "black";
         scoreboardHuman.style.color = "red";
         compVoice("Whatever, I let you win.")

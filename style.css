@@ -1,4 +1,7 @@
-body { background: rgb(0, 0, 0); perspective: 35em; }
+
+
+/* SPEECH BUBBLE SHAPE */
+
 .speech-bubble {
   position: relative;
   margin: .5em auto;
@@ -30,6 +33,16 @@ body { background: rgb(0, 0, 0); perspective: 35em; }
   width: 0; height: 1em;
   transform: rotate(45deg) skewX(75deg);
 }
+/* END SPEECH BUBBLE SHAPE */
+
+
+* {
+    font-family: monospace;
+    color: rgb(176, 109, 176);
+    background: rgb(0, 0, 0); 
+    background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+}
+
 #robot{
     font-size: 6em;
     color: greenyellow;
@@ -37,15 +50,10 @@ body { background: rgb(0, 0, 0); perspective: 35em; }
     margin-top: 10%
 }
 
-* {
-    font-family: monospace;
-    color: rgb(176, 109, 176);
- 
-}
-
 button {
     padding: 15px;
     margin: 5px;
+    background-color: #f4fbfe;
     border: 1px solid black;
 		
 }
