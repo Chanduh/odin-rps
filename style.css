@@ -1,14 +1,57 @@
+body { background: rgb(0, 0, 0); perspective: 35em; }
+.speech-bubble {
+  position: relative;
+  margin: .5em auto;
+  padding: .25em;
+  width: 10em; height: 4em;
+  border-radius: .25em;
+  transform: rotate(-4deg) rotateY(15deg);
+  background: rgb(176, 109, 176);
+  font: 2em/4 monospace, sans-serif;
+  text-align: center;
+}
+.speech-bubble:before, .speech-bubble:after {
+  margin-top:5px;
+  position: absolute;
+  z-index: -1;
+  content: '';
+}
+.speech-bubble:after {
+  top: 0; right: 0; bottom: 0; left: 0;
+  border-radius: inherit;
+  transform: rotate(2deg) translate(.35em, -.15em) scale(1.02);
+  background: #f4fbfe;
+}
+.speech-bubble:before {
+  border: solid 0 transparent;
+  border-right: solid 3.5em #f4fbfe;
+  border-bottom: solid .25em rgb(176, 109, 176);
+  bottom: .25em; left: 1.25em;
+  width: 0; height: 1em;
+  transform: rotate(45deg) skewX(75deg);
+}
+#robot{
+    font-size: 6em;
+    color: greenyellow;
+    text-align: center;
+    margin-top: 10%
+}
+
 * {
     font-family: monospace;
+    color: rgb(176, 109, 176);
  
 }
 
 button {
     padding: 15px;
     margin: 5px;
+    border: 1px solid black;
+		
 }
 
 #buttons {
+   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,16 +59,18 @@ button {
 
 }
 
-h1 {
+#computerVoice {
     align-items: center;
+    font-size: 2em;;
     justify-content: center;
     display: flex;
-    border: 1px solid red;
+	line-height: 1em;
+
 }
 
 #scoreboards{
     display: flex;
-    border: 1px solid red;
+    border: 2px solid rgb(176, 109, 176);
     justify-content: space-evenly;
     padding: 10px;
 
@@ -36,8 +81,13 @@ h1 {
     font-size: 50px;;
     width: 100px;
     height: 75px;
-    border: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: greenyellow
 }
+
+p.playerScoreLabels{
+    font-size: 2em;
+}
+
