@@ -17,9 +17,8 @@ function tallyComputer() {
         computerScore++;
         machine.style.color = "red";
         human.style.color = "rgb(176, 109, 176)";
-
-
 }
+
 function showHumanChoice(string) {
     document.getElementById('human').innerHTML
         = string;
@@ -28,7 +27,11 @@ function showMachineChoice(string) {
     document.getElementById('machine').innerHTML
         = string;
 }
-
+function tie() {
+        machine.style.color = "rgb(176, 109, 176)";
+        human.style.color = "rgb(176, 109, 176)";
+        compVoice("Eh, it's a tie!");
+}
 
 let playerSelection;
 let humanScore = 0;
@@ -95,7 +98,7 @@ function playRound(playerSelection, func){
         
 
         if (playerSelection === computerSelection){
-            compVoice("Eh, it's a tie!");
+            tie();
         }
         else if ((computerSelection == "ROCK" && playerSelection == "PAPER")||
             (computerSelection == "PAPER" && playerSelection == "SCISSORS")||
