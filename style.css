@@ -1,5 +1,4 @@
 
-
 /* SPEECH BUBBLE SHAPE */
 
 .speech-bubble {
@@ -35,6 +34,12 @@
 }
 /* END SPEECH BUBBLE SHAPE */
 
+body{
+  display: flex;
+  flex-direction: column;
+  font-size: 4rem;
+  padding: 0px;
+  }
 
 * {
     font-family: monospace;
@@ -44,15 +49,17 @@
 }
 
 #robot{
-    font-size: 6em;
+    font-size: 8rem;
     color: greenyellow;
     text-align: center;
     margin-top: 10%
 }
 
+
+
 button {
-    padding: 15px;
-    margin: 5px;
+    padding: 1rem;
+    margin: .5rem;
     background-color: #f4fbfe;
     border: 1px solid black;
 		
@@ -63,16 +70,16 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:20px;
+    padding:1.5rem;
 
 }
 
 #computerVoice {
     align-items: center;
-    font-size: 2em;;
+    font-size: 2rem;;
     justify-content: center;
     display: flex;
-	line-height: 1em;
+	line-height: 2rem;
 
 }
 
@@ -80,29 +87,20 @@ button {
     display: flex;
     border: 2px solid rgb(176, 109, 176);
     justify-content: space-evenly;
-    padding: 10px;
-
-}
-
-#scoreboardHuman, 
-#scoreboardComputer{
-    font-size: 50px;;
-    width: 100px;
-    height: 75px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: greenyellow
+    padding: 0rem;
+    font-size: 3rem;
+    
 }
 
 p.playerScoreLabels{
-    font-size: 2em;
+    font-size: 3rem;
 }
 
-#human {
+#scoreboardHuman,
+#scoreboardComputer{
+  color: white;
+  font-size: 5rem;
+}
 
-}
-#machine{
-  
-}
+
 
