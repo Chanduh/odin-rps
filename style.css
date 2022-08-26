@@ -88,18 +88,18 @@ button {
     border: 2px solid rgb(176, 109, 176);
     justify-content: space-evenly;
     padding: 0rem;
-    font-size: 3rem;
+    font-size: 1rem;
     
 }
 
 p.playerScoreLabels{
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 #scoreboardHuman,
 #scoreboardComputer{
   color: white;
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 
